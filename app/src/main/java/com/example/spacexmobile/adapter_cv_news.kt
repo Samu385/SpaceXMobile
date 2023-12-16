@@ -27,7 +27,7 @@ class adapter_cv_news : RecyclerView.Adapter<adapter_cv_news.ViewHolder>() {
 
         init{
             itemImage = itemView.findViewById(R.id.cv_imageNews)
-            itemTitle = itemView.findViewById(R.id.cv_descriptionNews)
+            itemTitle = itemView.findViewById(R.id.cv_headerNews)
             itemDescripcion = itemView.findViewById(R.id.cv_descriptionNews)
 
         }
