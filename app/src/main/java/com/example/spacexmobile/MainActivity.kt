@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
                 binding.nzd.text = String.format("NZD: %.2f", request.rates.NZD)
                 binding.usd.text = String.format("USD: %.2f", request.rates.USD)
                 binding.gbp.text = String.format("GBP: %.2f", request.rates.GBP)*/
-                Log.i("Costeeee",request[0].cost_per_launch.toString())
+                Log.i("Costeeee",request[0].flickr_images[0])
                 //Toast.makeText(this, "resultado: " + request.id + " "+  request.description + " "+ request.name, Toast.LENGTH_LONG ).show()
             }
         }

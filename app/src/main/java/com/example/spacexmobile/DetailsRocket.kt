@@ -1,8 +1,10 @@
 package com.example.spacexmobile
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class DetailsRocket : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,5 +24,12 @@ class DetailsRocket : AppCompatActivity() {
         companyTV.text = getString(R.string.dr_PrevCompany) + " " +rocket.company
         costPerLaunchTV.text = getString(R.string.dr_PrevCostPerLaunch) + " " +rocket.cost_per_launch
         descriptionTV.text = rocket.description
+
+        var recyclerview = findViewById<RecyclerView>(R.id.recyclerViewImagesRocket)
+        
+        var adapter = ImageAdapter(rocket.flickr_images)
+
+        recyclerview.layoutManager = LinearLayoutManager(this)
+        recyclerview.adapter = adapter
     }
 }

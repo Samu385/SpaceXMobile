@@ -14,7 +14,8 @@ class RocketInfo(
     var country: String,
     var company: String,
     var description: String,
-    var id: String
+    var id: String,
+    var flickr_images: Array<String>
 ) : Parcelable {
 
     constructor(parcel: Parcel) : this(
@@ -28,7 +29,8 @@ class RocketInfo(
         parcel.readString()!!,
         parcel.readString()!!,
         parcel.readString()!!,
-        parcel.readString()!!
+        parcel.readString()!!,
+        parcel.createStringArray()!! // Agrega la lectura de flickr_images
     )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
@@ -43,6 +45,7 @@ class RocketInfo(
         parcel.writeString(company)
         parcel.writeString(description)
         parcel.writeString(id)
+        parcel.writeStringArray(flickr_images) // Agrega la escritura de flickr_images
     }
 
     override fun describeContents(): Int {
@@ -59,4 +62,3 @@ class RocketInfo(
         }
     }
 }
-
