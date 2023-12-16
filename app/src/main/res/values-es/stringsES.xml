@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SpaceXMobile</string>
+
+    //Defaults values CardView news
+    <string name="header_cv">Encabezado de la Noticia</string>
+    <string name="description_cv">Una pequeña descripci{on de la noticia</string>
+</resources>

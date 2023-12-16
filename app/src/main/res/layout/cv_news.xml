@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_view_registro_nombre"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:layout_marginEnd="16dp"
+    card_view:cardBackgroundColor = "#227C9D"
+    card_view:cardCornerRadius="20dp"
+    card_view:elevation="6dp"
+    card_view:contentPadding="4dp">
+    <RelativeLayout
+        android:id="@+id/card_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fadingEdgeLength="10dp"
+        android:padding="16dp">
+    <ImageView
+        android:id="@+id/cv_imageNews"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/cv_headerNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/cv_imageNews"
+            android:text="@string/header_cv" />
+
+        <TextView
+            android:id="@+id/cv_descriptionNews"
+            android:layout_width="192dp"
+            android:layout_height="118dp"
+            android:layout_below="@+id/cv_headerNews"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/cv_imageNews"
+            android:text="@string/description_cv" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

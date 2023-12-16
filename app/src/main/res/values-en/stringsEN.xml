@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SpaceXMobile</string>}
+    <string name="app_name">SpaceXMobile</string>
 
     //Defaults values CardView news
     <string name="header_cv">Header of the new</string>
