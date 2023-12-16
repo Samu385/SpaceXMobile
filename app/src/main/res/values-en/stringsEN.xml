@@ -5,4 +5,20 @@
     //Defaults values CardView news
     <string name="header_cv">Header of the new</string>
     <string name="description_cv">A little description</string>
+
+    //Defaults values CardView RocketInfo
+    <string name="header_cvRocketInfo">Header of the Rocket info</string>
+    <string name="type_cvRocketInfo">Rocket</string>
+    <string name="country_cvRocketInfo">United State</string>
+
+    //Defaults values Details rockets
+    <string name="dr_Name">Falcon</string>
+    <string name="dr_PrevCountry">Country: </string>
+    <string name="dr_Country">United States</string>
+    <string name="dr_PrevCostPerLaunch">Cost per launch: </string>
+    <string name="dr_CostPerLaunch">60000</string>
+    <string name="dr_PrevCompany">Company: </string>
+    <string name="dr_Company">SpaceX</string>
+    <string name="dr_Description">It is a Rockets</string>
+
 </resources>

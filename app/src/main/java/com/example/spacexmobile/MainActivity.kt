@@ -1,5 +1,6 @@
 package com.example.spacexmobile
 
+import android.content.Intent
 import android.net.ConnectivityManager
 import android.os.Bundle
 import android.util.Log
@@ -21,12 +22,6 @@ class MainActivity : AppCompatActivity() {
 
         //Toast.makeText(this, "online: " + isOnline().toString(), Toast.LENGTH_LONG ).show()
 
-        val recyclerView = findViewById<RecyclerView>(R.id.rv_news)
-        val adapter = adapter_cv_news()
-
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = adapter
-
         fetchCurrencyData().start()
     }
 
@@ -41,9 +36,11 @@ class MainActivity : AppCompatActivity() {
                 val inputSystem = connection.inputStream
                 val inputStreamReader = InputStreamReader(inputSystem, "UTF-8")
                 val request = Gson().fromJson(inputStreamReader, Array<RocketInfo>::class.java)
-                updateUI(request[0])
+                updateUI(request)
                 inputStreamReader.close()
                 inputSystem.close()
+
+
             }
             else
             {
@@ -53,16 +50,29 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun updateUI(request: RocketInfo)
+    private fun updateUI(request: Array<RocketInfo>)
     {
         runOnUiThread {
             kotlin.run {
+                val recyclerView = findViewById<RecyclerView>(R.id.rv_news)
+                val adapter = adapter_cv_RocketPreview(request)
+
+                recyclerView.layoutManager = LinearLayoutManager(this)
+                recyclerView.adapter = adapter
+
+                adapter.onItemClick ={
+                    val intent = Intent(this, DetailsRocket::class.java)
+                    intent.putExtra("Rocket", it)
+                    //finish()
+                    startActivity(intent)
+                }
+
 
                 /*binding.
                 binding.nzd.text = String.format("NZD: %.2f", request.rates.NZD)
                 binding.usd.text = String.format("USD: %.2f", request.rates.USD)
                 binding.gbp.text = String.format("GBP: %.2f", request.rates.GBP)*/
-                Log.i("Rocketinfo",request.id + " "+  request.description + " "+ request.name)
+                Log.i("Costeeee",request[0].cost_per_launch.toString())
                 //Toast.makeText(this, "resultado: " + request.id + " "+  request.description + " "+ request.name, Toast.LENGTH_LONG ).show()
             }
         }
