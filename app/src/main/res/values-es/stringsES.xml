@@ -14,7 +14,7 @@
     //Defaults values Details rockets
     <string name="dr_Name">Falcon</string>
     <string name="dr_PrevCountry">País: </string>
-    <string name="dr_Country">United States</string>
+    <string name="dr_Country">Estados Unidos</string>
     <string name="dr_PrevCostPerLaunch">Coste de lanzamiento: </string>
     <string name="dr_CostPerLaunch">60000</string>
     <string name="dr_PrevCompany">Compañía: </string>
