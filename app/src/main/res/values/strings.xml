@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">SpaceXMobile</string>}
 
+    //Pantalla Inicio
+    <string name="toolbar_home_titulo">Home</string>
+    <string name="boton_ver_noticias">News</string>
+    <string name="toolbar_acerca_de">About</string>
+
+    //Pantalla Acerca de
+    <string name="equipo_desarrollo">Equipo de desarrollo</string>
+    <string name="informacion_equipo">Esta aplicación fue desarrollada por Samuel Quiroz (Programador), Diego Santander (Programador)
+                                      y Benjamín Rodríguez (Diseñador)</string>
+    <string name="informacion_aplicacion">Esta aplicación implementa una conexión a una API sobre SpaceX, en esta aplicación se muestran
+                                          noticias y novedades relacionadas a SpaceX.</string>
+
     //Defaults values CardView news
     <string name="header_cv">Header of the new</string>
     <string name="description_cv">A little description</string>

@@ -3,9 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="Spektra_MoradoOscuro">#201f41</color>
-    <color name="Spektra_Morado">#422D53</color>
+    <color name="Spektra_MoradoOscuro">#363563</color>
+    <color name="Spektra_Morado">#61437A</color>
     <color name="Spektra_RojoRosado">#912E54</color>
-    <color name="Spektra_RosadoClaro">#D1788F</color>
-    <color name="Spektra_Rosado">#DD7C86</color>
+    <color name="Spektra_RosadoClaro">#B8577D</color>
+    <color name="Spektra_Rosado">#955D63</color>
+    <color name="Fondo">#D2B5B5</color>
 </resources>
