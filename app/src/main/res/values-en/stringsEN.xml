@@ -12,6 +12,12 @@
     <string name="informacion_equipo">This application was developed by Samuel Quiroz (Programmer), Diego Santander (Programmer) and Benjamín Rodríguez (Designer).</string>
     <string name="informacion_aplicacion">This application implements a connection to an API on SpaceX, in this application they are shown news and updates related to SpaceX.</string>
 
+    //Pantalla de noticias
+    <string name="toolbar_noticias">News</string>
+
+    //Pantalla de cohetes
+    <string name="toolbar_detalle_noticia">News detail</string>
+
     //Defaults values CardView news
     <string name="header_cv">Header of the new</string>
     <string name="description_cv">A little description</string>

@@ -11,25 +11,27 @@
     card_view:cardCornerRadius="20dp"
     card_view:elevation="6dp"
     card_view:contentPadding="4dp">
+
     <RelativeLayout
         android:id="@+id/card_view_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/Spektra_RosadoClaro"
         android:fadingEdgeLength="10dp"
         android:padding="16dp">
-    <ImageView
-        android:id="@+id/cv_imageNews"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentBottom="false"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:id="@+id/cv_imageNews"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="false"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp" />
 
         <TextView
             android:id="@+id/cv_headerNews"

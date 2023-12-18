@@ -16,7 +16,7 @@
         android:id="@+id/card_view_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/Spektra_RosadoClaro"
         android:fadingEdgeLength="10dp"
         android:padding="16dp">
 

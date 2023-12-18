@@ -11,11 +11,12 @@
     card_view:cardCornerRadius="20dp"
     card_view:elevation="6dp"
     card_view:contentPadding="4dp">
+
     <RelativeLayout
         android:id="@+id/card_view_layoutRocketInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/Spektra_RosadoClaro"
         android:fadingEdgeLength="10dp"
         android:padding="16dp">
 
@@ -35,6 +36,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:text="@string/type_cvRocketInfo" />
+
         <TextView
             android:id="@+id/cv_countryRocketInfo"
             android:layout_width="154dp"

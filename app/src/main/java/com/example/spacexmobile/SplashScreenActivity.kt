@@ -1,6 +1,7 @@
 package com.example.spacexmobile
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,6 +12,8 @@ import androidx.core.content.ContextCompat
 class SplashScreenActivity : AppCompatActivity() {
 
     private val SPLASH_TIMEOUT: Long = 3000
+
+    private lateinit var mediaPlayer: MediaPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,12 +27,16 @@ class SplashScreenActivity : AppCompatActivity() {
             window.navigationBarColor = ContextCompat.getColor(this, R.color.Spektra_RojoRosado)
         }
 
+        mediaPlayer = MediaPlayer.create(this, R.raw.inicio)
+        mediaPlayer.start()
+
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, HomeActivity::class.java)
+            mediaPlayer.stop()
             startActivity(intent)
             finish()
 
-        }, 2000)
+        }, 2500)
 
     }
 }
