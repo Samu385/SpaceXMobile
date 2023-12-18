@@ -4,7 +4,7 @@
 
     //Pantalla Home
     <string name="toolbar_home_titulo">Home</string>
-    <string name="boton_ver_noticias">News</string>
+    <string name="boton_ver_noticias">Rockets</string>
     <string name="toolbar_acerca_de">About</string>
 
     //Pantalla Acerca de
@@ -13,10 +13,10 @@
     <string name="informacion_aplicacion">This application implements a connection to an API on SpaceX, in this application they are shown news and updates related to SpaceX.</string>
 
     //Pantalla de noticias
-    <string name="toolbar_noticias">News</string>
+    <string name="toolbar_noticias">Rockets</string>
 
     //Pantalla de cohetes
-    <string name="toolbar_detalle_noticia">News detail</string>
+    <string name="toolbar_detalle_noticia">Rockets detail</string>
 
     //Defaults values CardView news
     <string name="header_cv">Header of the new</string>

@@ -3,7 +3,7 @@
 
     //Pantalla Inicio
     <string name="toolbar_home_titulo">Home</string>
-    <string name="boton_ver_noticias">News</string>
+    <string name="boton_ver_noticias">Rockets</string>
     <string name="toolbar_acerca_de">About</string>
 
     //Pantalla Acerca de

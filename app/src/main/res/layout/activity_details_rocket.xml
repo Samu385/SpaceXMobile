@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
         android:text="@string/dr_Name"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -37,6 +38,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="12dp"
         android:text="@string/dr_PrevCountry"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/drTV_Name" />
 
@@ -47,6 +49,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="@string/dr_PrevCompany"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/drTV_Country" />
 
@@ -57,6 +60,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="@string/dr_PrevCostPerLaunch"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/drTV_Company" />
 
@@ -66,14 +70,15 @@
         android:layout_height="110dp"
         android:layout_marginTop="12dp"
         android:text="@string/dr_Description"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/drTV_CostPerLaunch" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewImagesRocket"
-        android:layout_width="410dp"
-        android:layout_height="432dp"
+        android:layout_width="396dp"
+        android:layout_height="423dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
